@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp" app:cardCornerRadius="16dp" app:cardBackgroundColor="@color/white">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="14dp" android:orientation="vertical">
+        <TextView android:id="@+id/txtMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Example"
+            android:textSize="19sp" android:textColor="@color/ink" android:textStyle="bold"/>
+        <TextView android:id="@+id/txtMeta" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="source and time" android:textColor="@color/muted" android:textSize="12sp" android:layout_marginTop="3dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="6dp">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnSpeak" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Speak"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnSave" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Save"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnDelete" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:text="Delete"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

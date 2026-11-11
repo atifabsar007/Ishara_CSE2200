@@ -1,0 +1,29 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+*.iml
+.idea/
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing material and private credentials
+*.jks
+*.keystore
+*.p12
+service-account*.json
+
+# Firebase identifiers are app configuration, not admin credentials. Keep the
+# checked-in firebase_config.xml placeholders empty until the owner configures it.
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+*.jks
+*.keystore
+key.properties
+.env

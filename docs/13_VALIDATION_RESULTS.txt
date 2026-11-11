@@ -1,0 +1,11 @@
+Validation summary
+Date: 2026-10-18
+
+PASS - XML parsed (all 30 Android XML resources).
+PASS - Source checker verified Java ViewBinding widget ID references.
+PASS - Standalone Java source compiled: GestureDictionary, SentenceComposer, PhraseCatalog.
+PASS - Java logic smoke: 7 handshape classes x 5 contexts = 35 context-message mappings; sentence composition and phrase catalog.
+PASS - Provided logo image included.
+NOT TESTED - Full Android Gradle build, device camera, speech services, lifecycle and runtime permissions.
+NOT INCLUDED - Official Gradle wrapper binary/scripts; user can copy verified files from working Mac project.
+NOT INCLUDED - External MediaPipe task model; installer included, needs one-time download.

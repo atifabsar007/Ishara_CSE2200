@@ -1,0 +1,4 @@
+Download gesture_recognizer.task from:
+https://storage.googleapis.com/mediapipe-models/gesture_recognizer/gesture_recognizer/float16/1/gesture_recognizer.task
+
+Put it beside this text file. Do not rename it. The app will display a clear warning if missing.

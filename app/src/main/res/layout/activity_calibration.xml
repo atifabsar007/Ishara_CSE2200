@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true" android:background="@color/background">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+  <TextView android:id="@+id/btnBack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="← BACK" android:textSize="13sp" android:textStyle="bold" android:textColor="@color/primary" />
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gesture calibration" android:textSize="27sp" android:textColor="@color/ink" android:textStyle="bold" android:layout_marginTop="20dp" />
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tune the confidence needed before accepting a handshape. This adjusts a recognition threshold, not the AI model." android:textSize="14sp" android:textColor="@color/muted" android:layout_marginTop="8dp" />
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:padding="18dp" android:background="@drawable/bg_card_v3" android:orientation="vertical">
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Select gesture" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/ink" />
+   <Spinner android:id="@+id/spinnerGesture" android:layout_width="match_parent" android:layout_height="48dp" />
+   <TextView android:id="@+id/txtThreshold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Confidence threshold: 65%" android:textColor="@color/ink" android:layout_marginTop="14dp" android:textSize="15sp" />
+   <SeekBar android:id="@+id/seekThreshold" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="45" android:progress="15" android:layout_marginTop="8dp"/>
+   <com.google.android.material.button.MaterialButton android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Save threshold" android:textAllCaps="false" app:backgroundTint="@color/primary" />
+   <com.google.android.material.button.MaterialButton android:id="@+id/btnReset" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Restore default" android:textAllCaps="false" style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+   <com.google.android.material.button.MaterialButton android:id="@+id/btnPractice" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Practice this gesture in camera" android:textAllCaps="false" />
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:padding="18dp" android:background="@drawable/bg_card_v3" android:orientation="vertical">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Recognition correction log" android:textStyle="bold" android:textColor="@color/ink" android:textSize="18sp"/>
+    <TextView android:id="@+id/txtPredicted" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/muted" android:textSize="13sp" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Choose what your hand actually showed:" android:textColor="@color/ink" android:textSize="13sp" android:layout_marginTop="12dp"/>
+    <Spinner android:id="@+id/spinnerCorrection" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnRecordCorrection" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Save correction locally" android:textAllCaps="false"/>
+    <TextView android:id="@+id/txtCorrections" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Feedback corrections saved: 0" android:textColor="@color/muted" android:layout_marginTop="8dp" />
+  </LinearLayout>
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Privacy: recognition runs on-device; correction labels stay in local SQLite. No automatic retraining is performed." android:textSize="12sp" android:textColor="@color/muted" android:layout_marginTop="18dp" />
+ </LinearLayout>
+</ScrollView>

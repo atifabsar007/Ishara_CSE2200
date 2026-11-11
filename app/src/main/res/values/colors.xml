@@ -1,0 +1,12 @@
+<resources>
+    <color name="primary">#087B74</color>
+    <color name="primaryDark">#003E46</color>
+    <color name="primarySoft">#DDF4EE</color>
+    <color name="background">#F7FAF9</color>
+    <color name="ink">#143D3A</color>
+    <color name="muted">#4D6965</color>
+    <color name="white">#FFFFFF</color>
+    <color name="warning">#A45E16</color>
+    <color name="accent">#D6F46B</color>
+    <color name="line">#DCEBE7</color>
+</resources>

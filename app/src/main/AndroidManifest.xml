@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <queries>
+        <intent><action android:name="android.intent.action.TTS_SERVICE"/></intent>
+        <intent><action android:name="android.speech.RecognitionService"/></intent>
+    </queries>
+    <application android:allowBackup="false" android:icon="@drawable/ishara_logo_icon" android:roundIcon="@drawable/ishara_logo_icon" android:label="@string/app_name" android:theme="@style/Theme.Ishara" android:supportsRtl="true" android:usesCleartextTraffic="false">
+        <activity android:name=".ui.DictionaryActivity" android:exported="false"/><activity android:name=".ui.CalibrationActivity" android:exported="false"/>
+        <activity android:name=".ui.LabActivity" android:exported="false"/><activity android:name=".ui.SimulatorActivity" android:exported="false"/><activity android:name=".ui.PeerActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/><activity android:name=".ui.QuestActivity" android:exported="false"/>
+        <activity android:name=".ui.AuthActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ui.SettingsActivity" android:exported="false"/>
+        <activity android:name=".ui.HistoryActivity" android:exported="false"/>
+        <activity android:name=".ui.PhraseActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ui.GestureActivity" android:exported="false"/>
+        <activity android:name=".ui.CaptionActivity" android:exported="false"/>
+        <activity android:name=".ui.ConversationActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ui.LearnActivity" android:exported="false"/>
+        <activity android:name=".ui.ProgressActivity" android:exported="false"/>
+        <activity android:name=".ui.BoardActivity" android:exported="false"/>
+        <activity android:name=".ui.SentenceActivity" android:exported="false"/>
+        <activity android:name=".ui.AboutActivity" android:exported="false"/>
+        <activity android:name=".ui.MainActivity" android:exported="false"/>
+        <activity android:name=".ui.WelcomeActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".services.SpeechService" android:exported="false"/>
+        <provider android:name=".data.MessageProvider" android:authorities="com.kuet.ishara.provider" android:exported="false"/>
+    </application>
+</manifest>

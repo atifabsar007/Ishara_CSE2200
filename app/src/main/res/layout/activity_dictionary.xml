@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true" android:orientation="vertical" android:padding="20dp" android:background="@color/background">
+ <TextView android:id="@+id/btnBack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="← BACK" android:textSize="13sp" android:textStyle="bold" android:textColor="@color/primary"/>
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Visual gesture dictionary" android:textColor="@color/ink" android:textSize="25sp" android:textStyle="bold" android:layout_marginTop="16dp"/>
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Seven supported general hand shapes with Ishara demo meanings. These are not official Bangla Sign Language signs." android:textSize="13sp" android:textColor="@color/muted" android:layout_marginTop="8dp"/>
+ <EditText android:id="@+id/inputSearch" android:layout_width="match_parent" android:layout_height="52dp" android:hint="Search hand shape or Bangla meaning" android:singleLine="true" android:inputType="text" android:padding="12dp" android:layout_marginTop="16dp" android:background="@drawable/bg_sentence" android:textColor="@color/ink" android:textColorHint="@color/muted"/>
+ <androidx.recyclerview.widget.RecyclerView android:id="@+id/dictionaryList" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="18dp" android:clipToPadding="false" android:paddingBottom="12dp"/>
+</LinearLayout>

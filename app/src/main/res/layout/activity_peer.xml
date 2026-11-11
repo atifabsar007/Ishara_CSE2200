@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background" android:fillViewport="true" android:fitsSystemWindows="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="22dp">
+        <TextView android:id="@+id/btnBack" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="← BACK" android:textSize="13sp" android:textColor="@color/primary" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp"
+            android:text="Ishara Connect" android:textSize="29sp" android:textColor="@color/ink" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+            android:text="Exchange short messages live with another Ishara user. Messages are sent only after you press Send."
+            android:textSize="14sp" android:textColor="@color/muted"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+            android:padding="18dp" android:layout_marginTop="16dp" android:background="@drawable/bg_card_v3">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LIVE ROOM"
+                android:textSize="12sp" android:textColor="@color/primary" android:textStyle="bold"/>
+            <TextView android:id="@+id/txtRoomStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:text="Checking Firebase configuration..." android:textSize="14sp"
+                android:textColor="@color/ink"/>
+            <EditText android:id="@+id/editRoomCode" android:layout_width="match_parent" android:layout_height="52dp"
+                android:layout_marginTop="12dp" android:padding="12dp" android:singleLine="true"
+                android:background="@drawable/bg_tint_v3" android:hint="Enter room code" android:inputType="textCapCharacters"
+                android:textColor="@color/ink" android:textColorHint="@color/muted"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnCreateRoom" android:layout_width="match_parent"
+                android:layout_height="50dp" android:layout_marginTop="10dp" android:text="Create a new room"
+                android:textAllCaps="false" android:textColor="@color/white" app:backgroundTint="@color/primary" app:cornerRadius="14dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnJoinRoom" android:layout_width="match_parent"
+                android:layout_height="50dp" android:layout_marginTop="8dp" android:text="Join this room"
+                android:textAllCaps="false" android:textColor="@color/primaryDark" app:backgroundTint="@color/primarySoft" app:cornerRadius="14dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnShareRoom" android:layout_width="match_parent"
+                android:layout_height="46dp" android:layout_marginTop="8dp" android:text="Share room code"
+                android:textAllCaps="false" android:enabled="false" android:textColor="@color/primaryDark"
+                app:backgroundTint="@color/white" app:cornerRadius="14dp" app:strokeColor="@color/line" app:strokeWidth="1dp"/>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"
+            android:text="MESSAGES" android:textSize="12sp" android:textColor="@color/primary" android:textStyle="bold"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/chatList" android:layout_width="match_parent"
+            android:layout_height="240dp" android:layout_marginTop="8dp" android:background="@drawable/bg_card_v3"
+            android:padding="8dp"/>
+        <EditText android:id="@+id/editMessage" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="54dp" android:layout_marginTop="12dp" android:padding="12dp"
+            android:background="@drawable/bg_tint_v3" android:hint="Type a short message or load your latest gesture phrase"
+            android:textColor="@color/ink" android:textColorHint="@color/muted" android:inputType="textCapSentences|textMultiLine"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnSend" android:layout_width="match_parent"
+            android:layout_height="52dp" android:layout_marginTop="9dp" android:text="Send live message"
+            android:textAllCaps="false" android:enabled="false" android:textColor="@color/white"
+            app:backgroundTint="@color/primary" app:cornerRadius="14dp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnLoadLatest" android:layout_width="match_parent"
+            android:layout_height="48dp" android:layout_marginTop="8dp" android:text="Load latest saved Ishara message"
+            android:textAllCaps="false" android:textColor="@color/primaryDark" app:backgroundTint="@color/white"
+            app:cornerRadius="14dp" app:strokeColor="@color/line" app:strokeWidth="1dp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnSpeakLast" android:layout_width="match_parent"
+            android:layout_height="48dp" android:layout_marginTop="8dp" android:text="Speak latest incoming message"
+            android:textAllCaps="false" android:textColor="@color/primaryDark" app:backgroundTint="@color/white"
+            app:cornerRadius="14dp" app:strokeColor="@color/line" app:strokeWidth="1dp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnStop" android:layout_width="match_parent"
+            android:layout_height="48dp" android:layout_marginTop="8dp" android:text="Leave room"
+            android:textAllCaps="false" android:textColor="@color/primaryDark" app:backgroundTint="@color/primarySoft" app:cornerRadius="14dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:text="Privacy: room messages are shared with members who know the room code and are protected by Firebase Authentication rules. This prototype is not end-to-end encrypted. Do not send sensitive information."
+            android:textSize="12sp" android:textColor="@color/muted"/>
+    </LinearLayout>
+</ScrollView>

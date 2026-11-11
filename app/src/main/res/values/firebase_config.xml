@@ -1,0 +1,8 @@
+<resources>
+    <!-- Fill these four values from YOUR Firebase Android app settings and Realtime Database console.
+         Keep them empty to run the fully offline project. These IDs are not admin credentials. -->
+    <string name="firebase_app_id" translatable="false"></string>
+    <string name="firebase_api_key" translatable="false"></string>
+    <string name="firebase_project_id" translatable="false"></string>
+    <string name="firebase_database_url" translatable="false"></string>
+</resources>

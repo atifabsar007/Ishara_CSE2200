@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background" android:fitsSystemWindows="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <TextView android:id="@+id/btnBack" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="← BACK" android:textSize="13sp" android:textColor="@color/primary" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp"
+            android:text="Project Lab &amp; System Tools" android:textSize="27sp" android:textColor="@color/ink" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+            android:text="Demonstrate Android system components and networking used by Ishara."
+            android:textSize="14sp" android:textColor="@color/muted"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp"
+            android:text="WEEK 10 • SYSTEM BROADCASTS" android:textColor="@color/primary" android:textStyle="bold" android:textSize="13sp"/>
+        <TextView android:id="@+id/txtBattery" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:padding="15dp" android:background="@drawable/bg_card_v3"
+            android:text="Listening for battery and airplane-mode broadcasts..." android:textColor="@color/ink" android:textSize="14sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+            android:text="Try switching Airplane mode ON and OFF, or use the emulator Battery controls to test system events."
+            android:textColor="@color/muted" android:textSize="12sp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp"
+            android:text="WEEK 11 • HTTP &amp; JSON" android:textColor="@color/primary" android:textStyle="bold" android:textSize="13sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+            android:text="Make a real HTTPS GET request on a background executor and display the parsed JSON response."
+            android:textColor="@color/muted" android:textSize="13sp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnFetch" android:layout_width="match_parent"
+            android:layout_height="50dp" android:layout_marginTop="10dp" android:text="Run HTTP / JSON request"
+            android:textAllCaps="false" android:textColor="@color/white" app:backgroundTint="@color/primary" app:cornerRadius="14dp"/>
+        <TextView android:id="@+id/txtApi" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:padding="14dp" android:background="@drawable/bg_card_v3"
+            android:text="No request made yet" android:textColor="@color/ink" android:textSize="13sp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp"
+            android:text="FIREBASE SERVICES" android:textColor="@color/primary" android:textStyle="bold" android:textSize="13sp"/>
+        <TextView android:id="@+id/txtCloud" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:padding="14dp" android:background="@drawable/bg_card_v3"
+            android:text="Checking Firebase configuration..." android:textColor="@color/ink" android:textSize="13sp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnSync" android:layout_width="match_parent"
+            android:layout_height="50dp" android:layout_marginTop="10dp" android:text="Open Firebase live room"
+            android:textAllCaps="false" android:textColor="@color/primaryDark" app:backgroundTint="@color/primarySoft" app:cornerRadius="14dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp"
+            android:text="ContentProvider demonstration is available in Picture Board through Android Photo Picker and ContentResolver. The app does not upload selected pictures. SpeechService is a bound Android Service used for text-to-speech."
+            android:textColor="@color/muted" android:textSize="12sp"/>
+    </LinearLayout>
+</ScrollView>
